@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>VARAEV_REC | Портфолио</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #111;
+      color: #fff;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #4ade80;
+    }
+    a {
+      color: #93c5fd;
+    }
+    .hidden {
+      display: none;
+    }
+    .login-box {
+      max-width: 300px;
+      margin: 100px auto;
+      text-align: center;
+    }
+    input {
+      padding: 8px;
+      margin-top: 10px;
+      width: 100%;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #4ade80;
+      border: none;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    ul {
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+<div id="login" class="login-box">
+  <h2>Вход в портфолио</h2>
+  <input type="password" id="password" placeholder="Введите пароль">
+  <button onclick="checkPassword()">Войти</button>
+</div>
+
+<div id="portfolio" class="hidden">
+  <div class="container">
+    <h1>VARAEV_REC — Портфолио</h1>
+
+    <h2>Обо мне</h2>
+    <p>Я — видеооператор и монтажёр с опытом работы более 6 лет. Сотрудничал с региональными и федеральными СМИ. Снимаю репортажи, рекламу, интервью, многокамерные съёмки и ролики для соцсетей. Имею всё необходимое оборудование для профессиональной записи.</p>
+
+    <h2>Услуги</h2>
+    <ul>
+      <li>Съёмка и монтаж</li>
+      <li>Съёмка мероприятий</li>
+      <li>Работа с дронами</li>
+      <li>Монтаж Reels / Shorts / YouTube</li>
+    </ul>
+
+    <h2>Работы</h2>
+    <p><em>Проекты будут добавлены позже.</em></p>
+
+    <h2>Оборудование</h2>
+    <ul>
+      <li><strong>Камеры:</strong> Canon R7 (EF 18-150), Canon 200D (EF 18-136 STM, EF 18-55 STM), Canon M50 (EF-M 15-45 STM)</li>
+      <li><strong>Стабилизаторы:</strong> Zhiyum Crane 2, Zhiyum Crane Plus</li>
+      <li><strong>Микрофоны:</strong> Maono WM820 (петличные)</li>
+      <li><strong>Доп. оборудование:</strong> 3 штатива, источники света</li>
+    </ul>
+
+    <h2>Контакты</h2>
+    <p>Email: <a href="mailto:varaev_s-a@mail.ru">varaev_s-a@mail.ru</a></p>
+    <p>Instagram: <a href="https://instagram.com/kular_v" target="_blank">@kular_v</a></p>
+    <p>Telegram: <a href="https://t.me/Varaev_Said" target="_blank">@Varaev_Said</a></p>
+  </div>
+</div>
+
+<script>
+  function checkPassword() {
+    const password = document.getElementById('password').value;
+    if (password === 'KULARY_95') {
+      document.getElementById('login').style.display = 'none';
+      document.getElementById('portfolio').classList.remove('hidden');
+    } else {
+      alert('Неверный пароль');
+    }
+  }
+</script>
+
+</body>
+</html>
